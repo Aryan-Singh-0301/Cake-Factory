@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cake Factory</title>
+        <meta charset="UTF-8">
+        <style>
+             th h2{
+                text-align: center;
+                color: red;
+            }
+            h2{
+                color: red;
+                text-align: left;
+            }
+            p{
+                background-color: yellow;
+            }
+            td{
+                border: 5px solid red;
+            }
+            body{
+                background-image: url(https://thumbs.dreamstime.com/z/pink-cupcake-seamless-pattern-sweet-cake-texture-design-light-cartoon-patisserie-package-website-background-tileable-71562152.jpg);
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: repeat;
+            }
+        </style>
+        <script defer type="text/javascript" src="validation.js"></script>
+    </head>
+    <body>
+        <section>
+            <article>
+                <table style="width: 100%;">
+                    <thead>
+                        <th colspan="3">
+                            <h2>Cake Check List</h2>
+                        </th>
+                    </thead>
+                    <form method="POST" action="" id="CakeForm">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <h2>Cake Budget </h2>
+                                        <label for="Money">$</label>
+                                        <input type="number" name="Budget" id="Budget" min="0"><br><br>
+                                        <label for="Slices">Number of slices</label>
+                                        <input type="number" name="Slices" id="Slices" min="1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>Style Of Cake</h2>
+                                    <input type="radio" name = "cakeStyle">
+                                    <label for="cakeStyle">Traditional</label><br>
+                                    <input type="radio" name = "cakeStyle">
+                                    <label for="cakeStyle">Contemporary</label><br>
+                                    <input type="radio" name = "cakeStyle">
+                                    <label for="cakeStyle">Dramatic</label><br>
+                                    <input type="radio" name = "cakeStyle">
+                                    <label for="cakeStyle">Ornate</label><br>
+                                    <input type="radio" name = "cakeStyle">
+                                    <label for="cakeStyle">Simple</label><br>
+                                    <input type="radio" name = "cakeStyle">
+                                    <label for="cakeStyle">Regal</label><br>
+                                    <input type="radio" name = "cakeStyle">
+                                    <label for="cakeStyle">Unique</label><br>
+                                </td>
+                                <td>
+                                    <h2>Decorations <small>$20/slice</small></h2>
+                                    <input type="radio" name = "Decorations">
+                                    <label for="Decorations">Sugar flowers</label><br>
+                                    <input type="radio" name = "Decorations">
+                                    <label for="Decorations">Fresh flowers</label><br>
+                                    <input type="radio" name = "Decorations">
+                                    <label for="Decorations">Choclate shavings</label><br>
+                                    <input type="radio" name = "Decorations">
+                                    <label for="Decorations">Gold or silver leaf</label><br>
+                                    <input type="radio" name = "Decorations">
+                                    <label for="Decorations">Pearls</label><br>
+                                    <input type="radio" name = "Decorations">
+                                    <label for="Decorations">Lattice work</label><br>
+                                    <input type="radio" name = "Decorations">
+                                    <label for="Decorations">Piping</label><br>
+                                    <input type="radio" name = "Decorations">
+                                    <label for="Decorations">Cake Top</label><br>
+                                </td>
+                                <td>
+                                    <h2>Shape & Structure</h2>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Round $20</label><br>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Oval $40</label><br>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Square $30</label><br>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Rectangular $20</label><br>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Heart $50</label><br>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Sheet $40</label><br>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Tiered(with columns) $50</label><br>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Tiered, stacked $40</label><br>
+                                    <input type="radio" name = "Shape&Structure">
+                                    <label for="Shape&Structure">Cupcakes $20</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>Flavours & Fillings $10/slice</h2>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Chocolate</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Chocolate mud</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">White chocolate</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Mocha</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Truffle</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Mousse</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Caramel</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Lemon/circuits</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Orange</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Carrot (spice)</label><br>
+                                    <input type="radio" name = "Flavours&Fillings">
+                                    <label for="Flavours&Fillings">Berries and Whipped Cream</label><br>
+                                </td>
+                                <td>
+                                    <h2>Colours $5/slice</h2>
+                                    <input type="radio" name = "Colours">
+                                    <label for="Colours">White</label><br>
+                                    <input type="radio" name = "Colours">
+                                    <label for="Colours">Ivory</label><br>
+                                    <input type="radio" name = "Colours">
+                                    <label for="Colours">Yellow</label><br>
+                                    <input type="radio" name = "Colours">
+                                    <label for="Colours">Peach</label><br>
+                                    <input type="radio" name = "Colours">
+                                    <label for="Colours">Red</label><br>
+                                    <input type="radio" name = "Colours">
+                                    <label for="Colours">Pink</label><br>
+                                    <input type="radio" name = "Colours">
+                                    <label for="Colours">Lavender</label><br>
+                                </td>
+                                <td>
+                                    <label for="sub-total">Sub Total</label>
+                                    <p id="sub-total" style="width: 100; height: 100;"></p>
+                                    <label for="Tax">Tax</label><br>
+                                    <p id="Tax" style="width: 100; height: 100;"></p><br>
+                                    <label for="Total Price">Total Price</label>
+                                    <p id="TotalPrice" style="width: 100; height: 100;"></p><br>
+                                    <input type="submit" value="submit" onclick="calculate()">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </form>
+                </table>
+            </article>
+        </section>
+    </body>
+</html>
